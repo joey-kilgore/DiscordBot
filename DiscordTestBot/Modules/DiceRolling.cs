@@ -15,7 +15,7 @@ namespace DiscordTestBot.Modules
         [Command("d20")]
         public async Task RollD20()
         {
-            int roll = random.Next(1, 20);
+            int roll = random.Next(1, 21);
             if (roll == 1)
             {
                 await Context.Channel.SendMessageAsync(roll.ToString() + " CRITICAL MISS :laughing:");
